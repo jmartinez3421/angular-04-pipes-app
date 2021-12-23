@@ -1,0 +1,21 @@
+<p-card 
+    [style]="{'width': '25rem', 'margin-bottom': '2em'}"
+    header="P-SimpleCard"
+    subheader="Esto es un subheader"
+    *ngIf="mostrar"
+>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam velit atque labore, nisi tempore provident sapiente illum natus totam in, at soluta dicta! Quo laboriosam officiis accusantium labore cum!
+
+    <ng-template pTemplate='footer'>
+        Esto es el footer
+    </ng-template>    
+</p-card>
+
+<button 
+    pButton type="button" 
+    [label]="mensaje" 
+    [icon]="iconoOjo" 
+    iconPos="right" 
+    class="p-button-rounded"
+    (click)="ocultarPCard()"
+></button>
